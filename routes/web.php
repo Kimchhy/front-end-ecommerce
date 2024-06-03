@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductDetailController;
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/product', [ProductDetailController::class, 'index'])->name('productIndex');
+Route::get('/seach', [ProductController::class, 'index'])->name('seach');
