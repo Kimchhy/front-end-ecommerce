@@ -43,7 +43,7 @@
 {{-- ====================Top4 product==================== --}}
 <div class="row pt-2">
     <div class="col-3">
-        <a href="{{ route('productIndex') }}"><img src="{{ asset('/images/001.jpg') }}" alt="" class="img-fluid rounded rounded-4"></a>
+        <img src="{{ asset('/images/001.jpg') }}" alt="" class="img-fluid rounded rounded-4">
     </div>
     <div class="col-3">
         <img src="{{ asset('/images/001.jpg') }}" alt="" class="img-fluid rounded rounded-4">
@@ -63,7 +63,7 @@
                 -$80
                 <span class="visually-hidden">unread messages</span>
               </span>
-            <img src="{{ asset('/images/002.png') }}" class="card-img-top" alt="...">
+              <a href="{{ route('productIndex') }}"><img  src="{{ asset('/images/002.png') }}" class="card-img-top" alt="..."></a>
             <div class="card-body">
                 <h3 class="text-danger fw-bold">$500.00</h3>
                 <p class="d-flex justify-content-between">
